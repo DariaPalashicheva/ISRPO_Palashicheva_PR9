@@ -27,7 +27,19 @@ namespace ISRPO_Palashicheva_PR9
 
         private void Schet_Click(object sender, RoutedEventArgs e)
         {
+            string a = Convert.ToString(Dany.Content);
+            //счет идет с первой буквы(с 0). Метод IndexOf может осуществлять поиск подстроки в строке
+            int index = a.IndexOf("OP");
+            Itog.Content = Convert.ToString(index);
+            //метод Substring возвращает часть строки указанной длины, начинаяс указанной позиции:
+            string b = a.Substring(3, 5);
+            Itog2.Content = Convert.ToString(b);
+        }
 
+        private void Win1_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 a = new Window1();
+            a.Show();
         }
     }
 }
