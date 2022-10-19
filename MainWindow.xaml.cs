@@ -41,5 +41,11 @@ namespace ISRPO_Palashicheva_PR9
             Window1 a = new Window1();
             a.Show();
         }
+
+        private void Win2_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 a2 = new Window2();
+            a2.Show();
+        }
     }
 }

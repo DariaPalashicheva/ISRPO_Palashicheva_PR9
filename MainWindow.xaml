@@ -13,6 +13,7 @@
             <Label x:Name="Itog2" Content="0" Height="30" Width="100"/>
             <Button x:Name="Schet" Content="Счет" Click="Schet_Click" Width="150" Height="50"/>
             <Button x:Name="Win1" Content="Компонент ListBox" Click="Win1_Click" Width="150" Height="50"/>
+            <Button x:Name="Win2" Content="Индивидуальное задание" Click="Win2_Click" Width="150" Height="50"/>
         </WrapPanel>
     </Grid>
 </Window>
