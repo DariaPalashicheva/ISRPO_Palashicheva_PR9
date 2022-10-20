@@ -59,13 +59,13 @@ namespace ISRPO_Palashicheva_PR9
             int m = Int32.Parse(tb1.Text) - 1, j = Int32.Parse(tb2.Text) - 1;
 
 
-                //получаем доступ к элементу
-                ListBoxItem li = (ListBoxItem)(phonesList.ItemContainerGenerator.ContainerFromIndex(1));
-                me.Text = li.Content.ToString();
+            //получаем доступ к элементу
+            ListBoxItem li = (ListBoxItem)phonesList.Items[phonesList.SelectedIndex];
+            me.Text = li.Content.ToString();
                 string[] stroka = me.Text.Split(' ');
                 foreach (var t in stroka)
                 {
-                    itogg.Text += zamena(t, m, j) + Environment.NewLine;
+                    itogg.Text += zamena(t, m, j) + " ";
                 }
 
         }

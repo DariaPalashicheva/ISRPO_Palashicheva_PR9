@@ -8,17 +8,14 @@
         Title="Window2" Height="470" Width="250">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="180*"/>
+            <RowDefinition Height="259*"/>
         </Grid.RowDefinitions>
         <ListBox Grid.Row="0" Name="phonesList">
             <TextBlock FontWeight="Bold" TextDecorations="UnderLine" Text="Много нового текста"/>
             <ListBoxItem Background="LightGray">Hello world</ListBoxItem>
-            <ListBoxItem>КГБ ПОУ АПТ</ListBoxItem>
-            <ListBoxItem Background="LightGray">Палашичева</ListBoxItem>
-            <ListBoxItem>iPhone 6S Plus</ListBoxItem>
-            <ListBoxItem Background="LightGray">Практическая 9</ListBoxItem>
-            <ListBoxItem>Microsoft Lumia 950</ListBoxItem>
+            <ListBoxItem>Privet mirok</ListBoxItem>
+            <ListBoxItem Background="LightGray">Just another list item</ListBoxItem>
         </ListBox>
         <StackPanel Grid.Row="1">
             <Button x:Name="Button" Content="Пуск" Height="30" Click="Button_Click"/>
@@ -26,9 +23,8 @@
             <Button x:Name="Button2" Content="Поменять местами буквы" Height="30" Click="Button2_Click"/>
             <TextBox x:Name="tb1"  Height="23" Grid.Row="1" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="120" HorizontalAlignment="Center"/>
             <TextBox x:Name="tb2" HorizontalAlignment="Center" Height="23" Grid.Row="1" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="120"/>
-            <TextBlock x:Name="me" Text="Поменяли" Width="200" Height="29" />
-            <TextBlock x:Name="itogg" Text="" Width="200" Height="29"/>
+            <TextBlock x:Name="me" Text="Поменяли" Width="200" Height="23" Margin="21,0" />
+            <TextBox x:Name="itogg" Text="" Width="200" Height="50" HorizontalScrollBarVisibility="Visible"/>
         </StackPanel>
-
     </Grid>
 </Window>
